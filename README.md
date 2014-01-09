@@ -1,6 +1,6 @@
 # Master Prototype
 
-**Prototype of science visualizations as part of my practival work for the Master of Arts in Design**
+**Prototype of science visualizations as part of my practical work for the Master of Arts in Design.**
 
 ## Technology
 
