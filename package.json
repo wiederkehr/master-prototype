@@ -1,12 +1,12 @@
 {
   "name": "master-prototype",
   "version": "0.0.1",
-  "description": "",
+  "description": "Prototype of science visualizations as part of my practical work for the Master of Arts in Design.",
   "repository": {
     "type": "git",
-    "url": "ssh://git@bitbucket.org/interactivethings/1238-gspi-cms.git"
+    "url": "ssh://git@bitbucket.org/wiederkehr/master-prototype.git"
   },
-  "author": "Interactive Things",
+  "author": "Benjamin Wiederkehr",
   "dependencies": {
     "bower": "~1.2.8"
   }

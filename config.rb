@@ -1,19 +1,4 @@
 ###
-# Compass
-###
-
-# Susy grids in Compass
-# First: gem install compass-susy-plugin
-# require 'susy'
-require 'rgbapng'
-require 'compass-css-arrow'
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
 # Page options, layouts, aliases and proxies
 ###
 
@@ -42,9 +27,11 @@ page "*", :layout => "layouts/default"
 ###
 
 # Methods defined in the helpers block are available in templates
-helpers do
-
-end
+# helpers do
+#   def some_helper
+#     "Helping"
+#   end
+# end
 
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
@@ -61,8 +48,8 @@ set :css_dir, 'assets/stylesheets'
 set :images_dir, 'assets/images'
 
 # Add Bower components to Sprockets/SASS
-set :js_assets_paths, ["#{root}/components"]
-set :sass_assets_paths, ["#{root}/lib/assets/stylesheets", "#{root}/components"]
+set :js_assets_paths, ["#{root}/bower_components"]
+set :sass_assets_paths, ["#{root}/lib/assets/stylesheets", "#{root}/bower_components"]
 
 set :template_dir, 'assets/javascripts/templates'
 

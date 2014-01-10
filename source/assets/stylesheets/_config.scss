@@ -1,68 +1,54 @@
-// IMPORTS
-/////////////////////////////////////////////////////////////////*/
-@import "compass";
-
-$app-width:  643px;
-
 /* Colors
 ----------------------------------------------- */
+$default-color:     #1E1E1E;
+$bg-color:          #F5F5F5;
+$bg-color-dark:     #F0F0F0;
 
-$default-color          : #777777;
-$default-color-contrast : #666666;
-$default-color-pale     : #999999;
-$background             : #F2F2F2;
+$border-color:      #DDDDDD;
+$border-color-dark: #999999;
+$border-color-light:#E9E9E9;
 
-$link-color             : #999999;
-$link-color-active      : #666666;
+$text-color:        #333333;
+$text-color-dark:   #333333;
+$text-color-light:  #999999;
+$text-color-bright: #BBBBBB;
+$text-color-invers: #FFFFFF;
 
-$dark                   : #1E1E1E;
-$dark-shade             : #222222;
-$shade                  : #404040;
-$shade-bright           : #606060;
-$neutral                : #999999;
-$neutral-pale           : #a5a5a5;
-$pale                   : #CCCCCC;
-$pale-bright            : #D2D3D2;
-$bright                 : #E6E6E6;
-$light                  : #FFFFFF;
+$link-color:         #2171b5;
+$link-color-hover:   #08519c;
+$link-color-active:  #08306b;
 
 /* Typography
 ----------------------------------------------- */
-$default-font-family     : Arial, sans-serif;
+$font-s:            12px;
+$font-m:            14px;
+$font-l:            16px;
+$font-h:            24px;
 
-$small-font-size         : 10px;
-$default-font-size       : 12px;
-$medium-normal-font-size : 16px;
-$medium-font-size        : 20px;
-$large-font-size         : 30px;
+$line-s:            1;
+$line-m:            1.25;
+$line-l:            1.5;
 
-$small-line-height       : 1;
-$default-line-height     : 1.25;
-$large-line-height       : 1.5;
-
+$base-font-family:  'Source Sans Pro', sans-serif;
+$base-font-size:    $font-m;
+$base-line-height:  $line-m;
 
 /* Spaces
 ----------------------------------------------- */
 $space-x  : 5px;
 $space-s  : 10px;
 $space-m  : 20px;
-$space-l  : 30px;
+$space-l  : 40px;
 $space-h  : 60px;
 
-$radius-s : 5px;
-$radius-l : 10px;
-
-
-/* Base Imports
+/* Radii
 ----------------------------------------------- */
+$radius-x:  3px;
+$radius-s:  5px;
+$radius-m:  7px;
+$radius-l: 10px;
 
-@import "rgbapng";
-@import "compass-css-arrow";
-@import "compass/layout/sticky-footer";
-
-// Library CSS styles
-@import "ixt-reset";
-@import "micro-clearfix";
-@import "position";
-@import "grid";
-@import "space";
+/* Sizes
+----------------------------------------------- */
+$header-height: 50px;
+$footer-height: 40px;

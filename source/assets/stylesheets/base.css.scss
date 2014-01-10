@@ -1,27 +1,24 @@
-/**
- * BASE
- * The main file that will be available to the browser
- */
-
+/* Dependencies
+----------------------------------------------- */
 @import "config";
+@import "space";
 
-
-/* Reset all styles
+/* Frameworks
 ----------------------------------------------- */
-@include ixt-reset;
+@import "bootstrap/dist/css/bootstrap";
+@import "bourbon/app/assets/stylesheets/bourbon";
 
-/* Import app specific styles
+/* Activate Library
 ----------------------------------------------- */
+@include spaces;
+
+/* Base Styles
+----------------------------------------------- */
+@import "base/base";
 @import "base/typography";
-
-// Layout
 @import "base/layout";
 
-//@import "bootstrap/docs/assets/css/bootstrap";
-
-// Components
+/* Component Styles
+----------------------------------------------- */
 @import "components/navbar";
 @import "components/credits";
-
-/* Style Inbox (experiments, unfinished)
------------------------------------------------ */

@@ -1,7 +1,25 @@
-.app-content {
-  // Make space for navbar
-  padding-top: 40px;
+html, body {
+  height: 100%;
+  padding-top: $header-height;
+}
+.app-container{
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto $footer-height * -1;
+}
+.app-footer,
+.app-footer-push {
+  height: $footer-height;
 }
 
-// Make Footer Sticky
-@include sticky-footer(40px, ".app-container", ".app-footer-push", ".app-footer");
+// Portrait phone to landscape tablet
+@media (max-width: 1024px) {
+  .app-container{
+    margin-bottom: 0;
+  }
+  .app-footer-push,
+  .app-footer{
+    display: none;
+  }
+}

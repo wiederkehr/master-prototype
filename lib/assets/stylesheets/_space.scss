@@ -36,40 +36,43 @@ $spaces: (
 // Generate the CSS class names. This could be put into further loops,
 // but the way it's done here strikes a good balance between automation
 // (adding more spaces) vs. readability.
-@each $name-space-pair in $spaces {
-  $name:  nth($name-space-pair, 1);
-  $space: nth($name-space-pair, 2);
-  $sides: t top, r right, b bottom, l left;
 
-  .pt#{$name}, .pv#{$name}, .pa#{$name} {
-    padding-top: $space !important;
-  }
+@mixin spaces() {
+  @each $name-space-pair in $spaces {
+    $name:  nth($name-space-pair, 1);
+    $space: nth($name-space-pair, 2);
+    $sides: t top, r right, b bottom, l left;
 
-  .pr#{$name}, .ph#{$name}, .pa#{$name} {
-    padding-right: $space !important;
-  }
+    .pt#{$name}, .pv#{$name}, .pa#{$name} {
+      padding-top: $space !important;
+    }
 
-  .pb#{$name}, .pv#{$name}, .pa#{$name} {
-    padding-bottom: $space !important;
-  }
+    .pr#{$name}, .ph#{$name}, .pa#{$name} {
+      padding-right: $space !important;
+    }
 
-  .pl#{$name}, .ph#{$name}, .pa#{$name} {
-    padding-left: $space !important;
-  }
+    .pb#{$name}, .pv#{$name}, .pa#{$name} {
+      padding-bottom: $space !important;
+    }
 
-  .mt#{$name}, .mv#{$name}, .ma#{$name} {
-    margin-top: $space !important;
-  }
+    .pl#{$name}, .ph#{$name}, .pa#{$name} {
+      padding-left: $space !important;
+    }
 
-  .mr#{$name}, .mh#{$name}, .ma#{$name} {
-    margin-right: $space !important;
-  }
+    .mt#{$name}, .mv#{$name}, .ma#{$name} {
+      margin-top: $space !important;
+    }
 
-  .mb#{$name}, .mv#{$name}, .ma#{$name} {
-    margin-bottom: $space !important;
-  }
+    .mr#{$name}, .mh#{$name}, .ma#{$name} {
+      margin-right: $space !important;
+    }
 
-  .ml#{$name}, .mh#{$name}, .ma#{$name} {
-    margin-left: $space !important;
+    .mb#{$name}, .mv#{$name}, .ma#{$name} {
+      margin-bottom: $space !important;
+    }
+
+    .ml#{$name}, .mh#{$name}, .ma#{$name} {
+      margin-left: $space !important;
+    }
   }
 }
