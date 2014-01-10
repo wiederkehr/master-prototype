@@ -1,0 +1,15 @@
+{
+  "name": "master-prototype",
+  "version": "0.0.1",
+  "dependencies": {
+    "d3": "~3.3.13",
+    "topojson": "~1.4.5",
+    "lodash": "~2.4.1",
+    "backbone": "~1.1.0",
+    "bootstrap": "~3.0.3",
+    "backbone.queryparams": "git://github.com/jhudson8/backbone-query-parameters.git",
+    "handlebars": "~1.3.0",
+    "ixt-js-lib": "ssh://git@bitbucket.org/interactivethings/ixt-js-lib.git",
+    "momentjs": "~2.5.0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "master-prototype",
+  "version": "0.0.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@bitbucket.org/interactivethings/1238-gspi-cms.git"
+  },
+  "author": "Interactive Things",
+  "dependencies": {
+    "bower": "~1.2.8"
+  }
+}
