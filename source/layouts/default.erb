@@ -39,10 +39,6 @@
       <%= render_partial :credits %>
     </footer>
     <!-- ——————————————————————————————————————————————————————————————————— JS -->
-    <!-- Base scripts -->
-    <%= javascript_include_tag "base" %>
-    <%= javascript_include_tag "bootstrap/dist/js/bootstrap" %>
-    <%= javascript_include_tag "main" %>
     <!-- Page specific scripts -->
     <% data.page.scripts.each do |script| %>
     <%= javascript_include_tag script %>
