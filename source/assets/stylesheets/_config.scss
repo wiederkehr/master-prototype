@@ -28,8 +28,10 @@ $font-m:            14px;
 $font-l:            16px;
 $font-h:            24px;
 
-$line-s:            1;
+$line-s:            $vertical-grid / $font-s;
 $line-m:            $vertical-grid / $font-m;
+$line-l:            $vertical-grid / $font-l;
+
 
 $base-font-family:  'Source Sans Pro', sans-serif;
 $base-font-size:    $font-m;
@@ -59,10 +61,9 @@ $space-h  : 60px;
 
 /* Radii
 ----------------------------------------------- */
-$radius-x:  3px;
-$radius-s:  5px;
-$radius-m:  7px;
-$radius-l: 10px;
+$radius-s:  2px;
+$radius-m:  4px;
+$radius-l:  6px;
 
 /* Layout Sizes
 ----------------------------------------------- */
