@@ -4,41 +4,92 @@ scripts: []
 ---
 <div class="page">
   <div class="container">
-    <h1>Master Prototypes</h1>
-    <h2>Introduction</h2>
+    <h1 class="page__title">Master Prototypes</h1>
+    <h2 class="page__subtitle">Introduction</h2>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col1of2 prm">
         <p class="lead">With my master’s thesis I want to find out what is the specific information, how does it need to be presented and how does a user have to be able to interact with it to gain actionable and relevant knowledge about their personal financial information. In a series of experiments with interactive prototypes I will focus on the interaction with the visu- alizations and keep the information and its representation constant. That means the created prototypes represent the information in the same way but provide other means of interacting with them.</p>
       </div><!-- .span4 -->
-      <div class="col-md-6">
+      <div class="col1of2 plm">
         <p class="lead">My general hypothesis is that the closer the action and the reaction are connected, the simpler the interface feels, the more it engages the user, the quicker an answer can be found. In the specific use case of the experiments, this means that the interaction techniques should be conducted using established multi-touch gestures instead of relying on sepa- rated interface elements to be operated using point and click interaction. The data should feel like an object that can be modified with the user’s own hands without the need to control it with generic interface elements.</p>
       </div>
     </div><!-- .row -->
-    <h2>Spatial Analysis</h2>
+    <hr class="mvh">
+    <h2 class="page__subtitle">Topography <small>Topic Map</small></h2>
     <div class="row">
-      <div class="col-md-6">
-        <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure d.</p>
+      <div class="col1of2 prm">
+        <p>The topic coverage and topical similarity of basic and aggregate units of scientific activity including authors and institutions can be derived from the units of scientific output associated with them including papers and patents.</p>
+        <dl class="dl--horizontal">
+          <dt>Focus:</dt> <dd>Topical</dd>
+          <dt>Units:</dt> <dd>Topic model</dd>
+          <dt>Metrics:</dt> <dd>Count of terms of publications</dd>
+          <dt>Subject:</dt> <dd>Spacial configuration</dd>
+          <dt>Representation:</dt> <dd>Force-directed topographic map</dd>
+          <dt>Interaction:</dt> <dd>Zoom, pan</dd>
+          <dt>Observations:</dt> <dd>Similarity, Coverage, Clustering</dd>
+          <dt>Deployment:</dt> <dd>Screen</dd>
+        </dl>
       </div><!-- .span4 -->
-      <div class="col-md-6">
-        <p>[IMAGE]</p>
+      <div class="col1of2 plm">
+        <p><%= image_tag 'component_topical_sketch.jpg', :class => "img--responsive img--frame" %></p>
       </div>
     </div><!-- .row -->
-    <h2>Temporal Analysis</h2>
+    <h2 class="page__subtitle">Evolution <small>Activity Stream</small></h2>
     <div class="row">
-      <div class="col-md-6">
-        <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure d.</p>
+      <div class="col1of2 prm">
+        <p>Science evolves over time. Attribute values of scholarly entities and their diverse aggregation increase and decrease at different rates and respond with different latency rates to internal and external events.</p>
+        <dl class="dl--horizontal">
+          <dt>Focus:</dt> <dd>Temporal</dd>
+          <dt>Units:</dt> <dd>Topic model</dd>
+          <dt>Metrics:</dt> <dd>Count of publications per topic</dd>
+          <dt>Subject:</dt> <dd>Continuous quantity</dd>
+          <dt>Representation:</dt> <dd>Alluvial diagram or stream graph</dd>
+          <dt>Interaction:</dt> <dd>Sort, Zoom, Detail on Demand</dd>
+          <dt>Observations:</dt> <dd>Patterns, Trends, Seasonality, Outliers, Bursts</dd>
+          <dt>Deployment:</dt> <dd>Screen</dd>
+        </dl>
       </div><!-- .span4 -->
-      <div class="col-md-6">
-        <p>[IMAGE]</p>
+      <div class="col1of2 plm">
+        <p><%= image_tag 'component_temporal_sketch.jpg', :class => "img--responsive img--frame" %></p>
       </div>
     </div><!-- .row -->
-    <h2>Topical Analysis</h2>
-    <div class="row mbh">
-      <div class="col-md-6">
-        <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure d.</p>
+    <h2 class="page__subtitle">Collaboration <small>Institution Map</small></h2>
+    <div class="row">
+      <div class="col1of2 prm">
+        <p>Geographic analysis aims to answer the question of where something happens and what impact it has on neighboring areas. In science visualization this is used to encode collaboration represented by the amount of co-authorships of papers between institutions.</p>
+        <dl class="dl--horizontal">
+          <dt>Focus:</dt> <dd>Spatial</dd>
+          <dt>Units:</dt> <dd>Institutions, Authors</dd>
+          <dt>Metrics:</dt> <dd>Count of co-authorship between institution</dd>
+          <dt>Subject:</dt> <dd>Spacial configuration</dd>
+          <dt>Representation:</dt> <dd>Force-directed network</dd>
+          <dt>Interaction:</dt> <dd>Search, Browse, Zoom, Pan, Filter, Detail on Demand</dd>
+          <dt>Observations:</dt> <dd>Density, Clustering Coefficient, Average Path Length</dd>
+          <dt>Deployment:</dt> <dd>Screen</dd>
+        </dl>
       </div><!-- .span4 -->
-      <div class="col-md-6">
-        <p>[IMAGE]</p>
+      <div class="col1of2 plm">
+        <p><%= image_tag 'component_spatial_sketch.jpg', :class => "img--responsive img--frame" %></p>
+      </div>
+    </div><!-- .row -->
+    <h2 class="page__subtitle">Citation <small>Author Network</small></h2>
+    <div class="row">
+      <div class="col1of2 prm">
+        <p>The study of networks aims to increase our understanding of the inner working of the relationships between nodes through expressive edges. Science visualization makes use of networks to investigate the characteristics of the nodes, the edges and the network as a whole.</p>
+        <dl class="dl--horizontal">
+          <dt>Focus:</dt> <dd>Relational</dd>
+          <dt>Units:</dt> <dd>Author</dd>
+          <dt>Metrics:</dt> <dd>Count of citation and co-citation between authors</dd>
+          <dt>Subject:</dt> <dd>Grouped by institution</dd>
+          <dt>Representation:</dt> <dd>Radial network</dd>
+          <dt>Interaction:</dt> <dd>Search, Browse, Filter, Detail on Demand</dd>
+          <dt>Node Observations:</dt> <dd>Centrality, Hub Score and Authority Score</dd>
+          <dt>Edge Observations:</dt> <dd>Durability, Reciprocity, Strength</dd>
+          <dt>Deployment:</dt> <dd>Screen</dd>
+        </dl>
+      </div><!-- .span4 -->
+      <div class="col1of2 plm">
+        <p><%= image_tag 'component_relational_sketch.jpg', :class => "img--responsive img--frame" %></p>
       </div>
     </div><!-- .row -->
   </div> <!-- .container -->
