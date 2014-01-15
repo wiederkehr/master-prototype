@@ -6,20 +6,22 @@ module IxtHelpers
   end
 
   def all_pages(options = {})
-    defaults = { :exclude_current => false, :exclude_index => true }
+    defaults = { :exclude_current => false, :exclude_index => false }
     options = defaults.merge(options)
 
     sitemap.resources.select do |resource|
       resource.ext == '.html' &&
       !resource.path.match(/(assets)/) && # exclude html files in assets directory
       !(options[:exclude_current] && resource.path == current_page.path) && # exclude current page
-      !(options[:exclude_index] && resource.path.match(/^index/))
+      !(options[:exclude_index] && resource.path.match(/^index/)) # exclude index page
     end
   end
 
   def pages_menu(options = {})
-    items = all_pages(options).map do |page|
-      "<li class='#{"active" if (page.data.title || page_name(page)) == current_page.data.title}'><a href='#{page.path}'>#{page.data.title || page_name(page)}</a></li>"
+    items = all_pages(options)
+      .sort_by { |page| page.data.position.to_i }
+      .map do |page|
+      "<li class='navbar__item #{"active" if (page.data.title || page_name(page)) == current_page.data.title}'><a class='navbar__link' href='#{page.path}'>#{page.data.title || page_name(page)}</a></li>"
     end
     "#{items.join('')}"
   end
