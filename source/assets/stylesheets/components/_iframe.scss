@@ -1,0 +1,22 @@
+.iframe-wrapper           {
+  width:100%;
+  height:100%;
+  margin:0 auto;
+  background:#CCC
+}
+.iframe-container         {
+  position:relative;
+}
+.iframe-container .ratio  {
+  display:block;
+  width:100%;
+  height:auto;
+}
+.iframe-container iframe  {
+  background: $bg-color;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}

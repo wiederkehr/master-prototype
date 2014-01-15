@@ -1,5 +1,52 @@
-/* NAVBAR
-/////////////////////////////////////////////////////////////////*/
+/* Navbar
+----------------------------------------------- */
 .navbar {
-  @include background-image(linear-gradient(top, rgba(255,255,255,0.95),rgba(255,255,255,0.90)));
+  @include clearfix();
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1024px;
+}
+.navbar__brand{
+  float: left;
+  padding: 15px 30px 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  text-decoration: none;
+  &:hover{
+    cursor: default;
+    text-decoration: none;
+  }
+}
+.navbar__content{
+  float: left;
+}
+.navbar__aside{
+  float: right;
+}
+.navbar__list{
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  float: left;
+  margin: 0;
+}
+.navbar__item{
+  display: block;
+  float: left;
+  position: relative;
+}
+.navbar__link{
+  display: block;
+  line-height: 20px;
+  padding: 15px;
+  position: relative;
+  text-decoration: none;
+}
+.navbar__item.active .navbar__link{
+  color: $text-color-light;
+  &:hover{
+    cursor: default;
+    text-decoration: none;
+  }
 }

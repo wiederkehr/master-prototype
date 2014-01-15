@@ -7,6 +7,7 @@ $bg-color-dark:     #F0F0F0;
 $border-color:      #DDDDDD;
 $border-color-dark: #999999;
 $border-color-light:#E9E9E9;
+$border-color-white:#FFFFFF;
 
 $text-color:        #333333;
 $text-color-dark:   #333333;
@@ -20,18 +21,33 @@ $link-color-active:  #08306b;
 
 /* Typography
 ----------------------------------------------- */
+$vertical-grid:     20px;
+
 $font-s:            12px;
 $font-m:            14px;
 $font-l:            16px;
 $font-h:            24px;
 
 $line-s:            1;
-$line-m:            1.25;
-$line-l:            1.5;
+$line-m:            $vertical-grid / $font-m;
 
 $base-font-family:  'Source Sans Pro', sans-serif;
 $base-font-size:    $font-m;
 $base-line-height:  $line-m;
+
+$font-size-h1:      floor($base-font-size * 2.6);   // ~36px
+$font-size-h2:      floor($base-font-size * 2.15);  // ~30px
+$font-size-h3:      ceil($base-font-size * 1.7);    // ~24px
+$font-size-h4:      ceil($base-font-size * 1.25);   // ~18px
+$font-size-h5:      $base-font-size;
+$font-size-h6:      ceil($base-font-size * 0.85);   // ~12px
+
+$computed-line-height:    floor($base-font-size * $base-line-height); // ~20px
+
+$headings-font-family:    $base-font-family;
+$headings-font-weight:    500;
+$headings-line-height:    1.1;
+$headings-color:          inherit;
 
 /* Spaces
 ----------------------------------------------- */
@@ -48,7 +64,9 @@ $radius-s:  5px;
 $radius-m:  7px;
 $radius-l: 10px;
 
-/* Sizes
+/* Layout Sizes
 ----------------------------------------------- */
 $header-height: 50px;
-$footer-height: 40px;
+$footer-height: 100px;
+
+$component-offset-h: 150px;

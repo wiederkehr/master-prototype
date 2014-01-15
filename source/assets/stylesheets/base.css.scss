@@ -1,24 +1,34 @@
+/* Frameworks
+----------------------------------------------- */
+@import "bourbon/app/assets/stylesheets/bourbon";
+
 /* Dependencies
 ----------------------------------------------- */
 @import "config";
+@import "reset";
+@import "grid";
+@import "images";
 @import "space";
-
-/* Frameworks
------------------------------------------------ */
-@import "bootstrap/dist/css/bootstrap";
-@import "bourbon/app/assets/stylesheets/bourbon";
 
 /* Activate Library
 ----------------------------------------------- */
+@include reset;
+@include grid;
+@include img-responsive;
+@include img-shadow;
+@include img-border;
+@include img-frame;
 @include spaces;
 
 /* Base Styles
 ----------------------------------------------- */
-@import "base/base";
+@import "base/scaffolding";
 @import "base/typography";
 @import "base/layout";
 
 /* Component Styles
 ----------------------------------------------- */
+@import "components/page";
 @import "components/navbar";
 @import "components/credits";
+@import "components/iframe";

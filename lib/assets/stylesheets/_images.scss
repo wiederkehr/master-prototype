@@ -1,0 +1,67 @@
+/**
+ * Images - The image mixins are based on Twitter Bootstrap
+ *
+ */
+
+/**
+ * Retina images - Short retina mixin for setting background-image and -size.
+ *
+ */
+@mixin img-retina($file-1x, $file-2x, $width-1x, $height-1x) {
+  .img--retina{
+    background-image: url($file-1x);
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) {
+      background-image: url($file-2x);
+      background-size: $width-1x $height-1x;
+    }
+  }
+}
+
+/**
+ * Responsive images - Keep images from scaling beyond the width of their parents.
+ *
+ */
+@mixin img-responsive($display: block) {
+  .img--responsive{
+    display: $display;
+    max-width: 100%; // Part 1: Set a maximum relative to the parent
+    height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+  }
+}
+
+/**
+ * Shadow images
+ *
+ */
+@mixin img-shadow() {
+  .img--shadow{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+  }
+}
+
+/**
+ * Border images
+ *
+ */
+@mixin img-border($color: $border-color, $width: 1px) {
+  .img--border{
+    border: $width solid $color;
+  }
+}
+
+/**
+ * Framed images
+ *
+ */
+@mixin img-frame() {
+  .img--frame{
+    border: 4px solid $border-color-white;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.1);
+  }
+}

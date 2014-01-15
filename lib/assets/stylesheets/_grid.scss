@@ -101,13 +101,4 @@
       width: auto;
     }
   }
-
-  /**
-   * Clearfix
-   *
-   * Styleguide 1.0.1
-   */
-  .clearfix {
-    @include clearfix;
-  }
 }
