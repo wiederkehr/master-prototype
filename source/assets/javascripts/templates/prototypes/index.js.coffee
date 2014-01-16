@@ -1,0 +1,1 @@
+"Modify me in templates/prototypes/index.js.coffee"

@@ -1,0 +1,18 @@
+---
+title: Methodology
+scripts: []
+position: 3
+---
+<div class="page">
+  <div class="container">
+    <h1 class="page__title">Methodology</h1>
+    <h2 class="page__subtitle">Data Extraction</h2>
+    <div class="row">
+      <div class="col2of3">
+        <p>The topic extraction use an unsupervised text mining method called Topic Modeling. This is a probabilistic method that automatically learns a set of topics that describe a corpus of documents, based on its vocabulary. A topic model of a collection of document is then a possible representation of the corpus, among others. This approach provides merely a flexible framework for representing, categorizing and browsing large collections of data.</p>
+        <p>The topic model used in this visualization is trained on titles and abstracts of over 600’000 NIH grants. It was computed using Collapsed Gibbs sampling model with a threshold of 870 topics. This approach assign each document to several topics, with probabilities to appear. A hierarchal clustering of this initial model is performed to provide more general topic models with 100, 150 and 200 topics.</p>
+        <p>The visualization counts the number of time a given proposal appear in publications and proposals. It computes success rate, spending level for user-defined selection of evaluation panels, host institutions or disciplines. Topics can also be selected by their word composition.</p>
+      </div>
+    </div><!-- .row -->
+  </div> <!-- .container -->
+</div><!-- .page -->
