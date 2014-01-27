@@ -25,8 +25,8 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
     <%= yield_content :head %>
   </head>
-  <body>
-    <%= yield %>
+  <body class="layout--app app-sidebar--squeeze app-sidebar--toright">
+    <div data-view="app-container" class="app-container"><%= yield %></div>
     <!-- ——————————————————————————————————————————————————————————————————— JS -->
     <!-- Page specific scripts -->
     <% data.page.scripts.each do |script| %>

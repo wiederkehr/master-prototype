@@ -4,11 +4,16 @@ html, body {
   height: 100%;
 }
 body{
-  padding-top: $header-height;
+  &.layout--default{
+    padding-top: $header-height;
+  }
+  &.layout--app{
+    min-width: 768px;
+  }
 }
-/* App Header
+/* Header
 ----------------------------------------------- */
-.app-header{
+.header{
   @include clearfix;
   background: #fff;
   border-bottom: 1px solid $border-color-light;
@@ -19,37 +24,82 @@ body{
   top: 0;
   z-index: 1030;
 }
-/* App Container
+/* Footer
 ----------------------------------------------- */
-.app-container{
+.footer,
+.footer-push {
+  height: $footer-height;
+}
+@media (max-width: 1024px) {
+  .page-container{
+    margin-bottom: 0;
+  }
+  .footer-push,
+  .footer{
+    display: none;
+  }
+}
+/* Page Layout
+----------------------------------------------- */
+.page-container{
   @include clearfix;
   min-height: 100%;
   height: auto !important;
   height: 100%;
   margin: 0 auto $footer-height * -1;
-  padding: 0 20px;
-  max-width: 1024px;
+  padding: 0 $space-m;
+  max-width: $page-max-width;
 }
-/* App Content
------------------------------------------------ */
-.app-content{
+.page-content{
   min-height: 400px;
   padding: $space-h 0;
 }
-/* App Footer
+/* Application Layout
 ----------------------------------------------- */
-.app-footer,
-.app-footer-push {
-  height: $footer-height;
+.placeholder{
+  color: $text-color-light;
+  border-bottom: 1px solid $border-color;
+  height: 100px;
+  position: relative;
+  .placeholder__label{
+    background: $bg-color-dark;
+    border-right: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    border-bottom-right-radius: $radius-m;
+    display: inline-block;
+    font-size: 12px;
+    left: 0;
+    padding: 0 5px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+  }
 }
-
-// Portrait phone to landscape tablet
-@media (max-width: 1024px) {
-  .app-container{
-    margin-bottom: 0;
-  }
-  .app-footer-push,
-  .app-footer{
-    display: none;
-  }
+.app-container{
+}
+.app-sidebar{
+  @extend .placeholder;
+}
+.app-header{
+  @extend .placeholder;
+}
+.app-intro{
+  @extend .placeholder;
+}
+.app-insight{
+  @extend .placeholder;
+}
+.app-content{
+  @include span-columns(12);
+  @include row(table);
+  height: 500px;
+}
+.app-chart{
+  @extend .placeholder;
+  @include span-columns(8);
+}
+.app-filter{
+  @extend .placeholder;
+  @include span-columns(4);
+  border-left: 1px solid $border-color;
 }

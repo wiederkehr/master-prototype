@@ -1,0 +1,50 @@
+/* Navbar
+----------------------------------------------- */
+.tabbar {
+  @include clearfix();
+  padding: 0 20px;
+}
+.tabbar__brand{
+  float: left;
+  padding: 15px 30px 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  text-decoration: none;
+  &:hover{
+    cursor: default;
+    text-decoration: none;
+  }
+}
+.tabbar__content{
+  float: left;
+}
+.tabbar__aside{
+  float: right;
+}
+.tabbar__list{
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  float: left;
+  margin: 0;
+}
+.tabbar__item{
+  display: block;
+  float: left;
+  position: relative;
+}
+.tabbar__link{
+  display: block;
+  line-height: 20px;
+  padding: 15px;
+  position: relative;
+  text-decoration: none;
+}
+.tabbar__item.active .tabbar__link{
+  color: $text-color-light;
+  &:hover{
+    cursor: default;
+    text-decoration: none;
+  }
+}

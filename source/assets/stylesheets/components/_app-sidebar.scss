@@ -1,0 +1,38 @@
+.app-sidebar{
+  background: $bg-color-dark;
+  border-right: 1px solid $border-color;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: $sidebar-width;
+  z-index: 1000;
+  &.app-sidebar--collapsed{
+    left: $sidebar-width * -1;
+  }
+}
+.app-sidebar--push{
+  overflow-x: hidden;
+  position: relative;
+  &.app-sidebar--toright{
+    left: $sidebar-width;
+  }
+  &.app-sidebar--toleft{
+    left: $sidebar-width * -1;
+  }
+}
+.app-sidebar--squeeze{
+  &.app-sidebar--toright{
+    padding-left: $sidebar-width;
+  }
+  &.app-sidebar--toleft{
+    padding-right: $sidebar-width;
+  }
+}
+.app-sidebar,
+.app-sidebar--push,
+.app-sidebar--squeeze,
+.app-sidebar--toright,
+.app-sidebar--toleft{
+  @include transition(all 0.3s ease);
+}

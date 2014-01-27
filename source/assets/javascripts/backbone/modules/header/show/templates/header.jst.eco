@@ -1,0 +1,14 @@
+<span class="placeholder__label">This is the header area</span>
+<div class="header-actions">
+  <ul class="action__list">
+    <li class="action__item">
+      <a data-view="toggle-sidebar" href="#" class="action__link btn btn--secondary btn--s <%= "active" if this.sidebarVisible %>">Toggle Sidebar</a>
+    </li>
+    <li class="action__item">
+      <a data-view="toggle-intro" href="#" class="action__link btn btn--secondary btn--s <%= "active" if this.introVisible %>">Toggle Intro</a>
+    </li>
+    <li class="action__item">
+      <a data-view="toggle-insight" href="#" class="action__link btn btn--secondary btn--s <%= "active" if this.insightVisible %>">Toggle Insight</a>
+    </li>
+  </ul>
+</div>

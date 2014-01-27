@@ -87,19 +87,5 @@ dt {
   font-weight: bold;
 }
 dd {
-  margin-left: 0; // Undo browser default
-}
-.dl--horizontal {
-  dt {
-    clear: left;
-    float: left;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: ($component-offset-h - 20);
-  }
-  dd {
-    @include clearfix();
-    margin-left: $component-offset-h;
-  }
+  margin-left: 0;
 }

@@ -1,0 +1,8 @@
+<div data-view="app-sidebar" class="app-sidebar"></div>
+<header data-view="app-header" class="app-header"></header>
+<div data-view="app-intro" class="app-intro"></div>
+<div data-view="app-insight" class="app-insight"></div>
+<div class="app-content">
+  <div data-view="app-chart" class="app-chart"></div>
+  <div data-view="app-filter" class="app-filter"></div>
+</div>

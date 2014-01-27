@@ -9,7 +9,7 @@ page "*", :layout => "layouts/default"
 # With no layout
 # page "index.html", :layout => false
 
-page "app.html", :layout => 'layouts/app'
+page "application.html", :layout => 'layouts/app'
 
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout

@@ -20,6 +20,7 @@ module IxtHelpers
   def pages_menu(options = {})
     items = all_pages(options)
       .sort_by { |page| page.data.position.to_i }
+      .reject {|page| page.data.position.to_i < 0}
       .map do |page|
       "<li class='navbar__item #{"active" if (page.data.title || page_name(page)) == current_page.data.title}'><a class='navbar__link' href='#{page.path}'>#{page.data.title || page_name(page)}</a></li>"
     end

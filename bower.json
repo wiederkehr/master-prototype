@@ -12,6 +12,8 @@
     "ixt-js-lib": "ssh://git@bitbucket.org/interactivethings/ixt-js-lib.git",
     "momentjs": "~2.5.0",
     "bourbon": "~3.1.8",
-    "marionette": "~1.5.0"
+    "marionette": "~1.5.0",
+    "neat": "~1.5.0",
+    "classie": "~1.0.0"
   }
 }

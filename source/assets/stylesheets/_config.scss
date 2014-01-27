@@ -19,6 +19,11 @@ $link-color:         #2171b5;
 $link-color-hover:   #08519c;
 $link-color-active:  #08306b;
 
+$component-01:       #a4c0c2;
+$component-02:       #7dadc6;
+$component-03:       #959ab0;
+$component-04:       #85c999;
+
 /* Typography
 ----------------------------------------------- */
 $vertical-grid:     20px;
@@ -67,7 +72,9 @@ $radius-l:  6px;
 
 /* Layout Sizes
 ----------------------------------------------- */
-$header-height: 50px;
-$footer-height: 100px;
+$page-max-width:  1024px;
+$header-height:   50px;
+$footer-height:   100px;
+$sidebar-width:   200px;
 
 $component-offset-h: 150px;

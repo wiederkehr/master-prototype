@@ -1,0 +1,2 @@
+<span class="placeholder__label">This is the sidebar area</span>
+<div data-view="app-navigation" class="app-navigation"></div>

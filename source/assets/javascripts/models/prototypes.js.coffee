@@ -1,1 +1,0 @@
-class App.Models.Prototype extends Backbone.Model
